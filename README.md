@@ -1,4 +1,4 @@
-# Documentação do Site Hospital Promater
+# Documentação do Site Hospital Lorem Ipsum
 Autores: Gerleidson Bomfim e [Ruan Esteves](https://github.com/RuanRodriguesEsteves)
 
 ## Índice
@@ -14,7 +14,7 @@ Autores: Gerleidson Bomfim e [Ruan Esteves](https://github.com/RuanRodriguesEste
 
 ## 1. Visão Geral
 
-O site do Hospital Promater foi desenvolvido para fornecer informações essenciais sobre o hospital, seus serviços, e facilitar o contato com os pacientes. A interface intuitiva e responsiva garante uma experiência de usuário agradável em diversos dispositivos.
+O site do Hospital Lorem Ipsum foi desenvolvido para fornecer informações essenciais sobre o hospital, seus serviços, e facilitar o contato com os pacientes. A interface intuitiva e responsiva garante uma experiência de usuário agradável em diversos dispositivos.
 
 ## 2. Estrutura do Site
 
@@ -70,7 +70,7 @@ O site do Hospital Promater foi desenvolvido para fornecer informações essenci
 ## 7. Seções Específicas e Conteúdo
 
 ### Quem Somos
-- **Objetivo**: Apresentar a história, missão e valores do Hospital Promater.
+- **Objetivo**: Apresentar a história, missão e valores do Hospital Lorem Ipsum.
 - **Conteúdo**: Texto descritivo sobre a fundação e o propósito do hospital.
 
 ### Serviços
@@ -83,4 +83,4 @@ O site do Hospital Promater foi desenvolvido para fornecer informações essenci
 
 ---
 
-Esta documentação foi elaborada para oferecer uma visão clara e detalhada do site do Hospital Promater, facilitando a compreensão de sua estrutura, funcionalidades e tecnologias empregadas.
+Esta documentação foi elaborada para oferecer uma visão clara e detalhada do site do Hospital Lorem Ipsum, facilitando a compreensão de sua estrutura, funcionalidades e tecnologias empregadas.
