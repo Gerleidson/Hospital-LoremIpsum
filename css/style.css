@@ -8,7 +8,7 @@ body {font-family: 'roboto', Arial, Helvetica, sans-serif;}
 header{position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 0 0; background: linear-gradient(0deg, rgba(4,172,140,0) 0%, rgba(4, 172, 141, 0) 100%);}
 header a:hover{color: #177c91; background-color: #fff; border-radius: 5px; transition: 0.10s;}  
 
-main {background-color: #ffffff; margin-top: 0px ; }
+main {background-color: #fff; margin-top: 0px ; }
 
 /*Main da pagina home*/
 .home-page {margin-top: 0;}
@@ -47,7 +47,6 @@ a:hover {transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);}
 /* Inverter a ordem dos botões */
 .carousel-control-prev {order: 1;}
 .carousel-control-next {order: 2;}
-
 
 /* Main navigation styling */
 .main-nav {flex: 1; text-align: left; align-items: center; background-color: transparent;}
