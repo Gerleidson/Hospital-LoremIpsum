@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var specialty = card.getAttribute('data-specialty');
             
             // Criar a URL do WhatsApp com a especialidade selecionada
-            var phone = '5571996207149'; // Número de telefone
+            var phone = '55'; // Número de telefone
             var message = encodeURIComponent(`Olá, gostaria de agendar uma consulta com ${specialty}`);
             var whatsappURL = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
             

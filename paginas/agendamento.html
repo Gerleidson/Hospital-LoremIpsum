@@ -3,21 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Coleta Domiciliar - Hospital Lorem Ipsum" />
-    <meta name="keywords" content="Hospital, Lorem Ipsum, Coleta, Domiciliar" />
+    <meta name="description" content="Hospital Lorem Ipsum -  Agendamento" />
+    <meta name="keywords" content="Hospital, Promater, Agendamento, Consultas, Exames" />
     <meta name="author" content="Gerleidson Bomfim">
     <meta name="robots" content="index, follow" />
-    <title>Coleta Domiciliar - Hospital Lorem Ipsum</title>
+    <title>Agendamento</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/stylePaginas.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  
 </head>
-<body class="bg-white">
-    
+<body>
+
     <header>
         <!-- Navbar -->
         <nav class="navbar">
@@ -108,62 +107,110 @@
             <div class="overlay"></div>
         </nav>
     </header>
-    
-    <main class="container content-section">
-        <div class="container mt-5">
 
-            <h3 class="text-center" style="color: #000;">Coleta Domiciliar</h3>
-            <!-- Seção de texto com imagem ao lado direito -->
-            <div class="col-md-12">
-                <div class="bg-white p-4 rounded border d-flex flex-column flex-md-row align-items-start">
-                    <div class="text-content flex-grow-1">
-                        <p>Sabemos que sua saúde e bem-estar são prioridades, e por isso o Hospital Lorem Ipsum está sempre buscando formas de tornar seu cuidado mais conveniente e acessível.</p>
-                        <p>Pensando nisso, oferecemos nosso serviço de coleta domiciliar, proporcionando aos nossos clientes a comodidade de realizar seus exames laboratoriais no conforto de sua casa.</p>
+    <main>
+        <div class="container mt-5">
+            <div class="bg-white p-4 rounded shadow-sm">
+                <h1>Serviços de Agendamento</h1>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" id="consulta-agenda-tab" data-toggle="tab" href="#consulta-agenda" role="tab" aria-controls="consulta-agenda" aria-selected="true">Consultar Agenda Médica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="marcacao-exames-tab" data-toggle="tab" href="#marcacao-exames" role="tab" aria-controls="marcacao-exames" aria-selected="false">Marcar Exame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="historico-marcacoes-tab" data-toggle="tab" href="#historico-marcacoes" role="tab" aria-controls="historico-marcacoes" aria-selected="false">Consultar Histórico de Marcações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="cancelar-marcacao-tab" data-toggle="tab" href="#cancelar-marcacao" role="tab" aria-controls="cancelar-marcacao" aria-selected="false">Cancelar Marcação</a>
+                    </li>
+                </ul>
+                <div class="tab-content mt-3" id="myTabContent">
+                    <!-- Consultar Agenda Médica -->
+                    <div class="tab-pane fade show active" id="consulta-agenda" role="tabpanel" aria-labelledby="consulta-agenda-tab">
+                        <h2>Consultar Agenda Médica</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="especialidadeConsulta">Especialidade:</label>
+                                <select class="form-control" id="especialidadeConsulta" name="especialidadeConsulta" required>
+                                    <option value="">Selecione uma especialidade</option>
+                                    <option value="clinica-geral">Clínica Geral</option>
+                                    <option value="cardiologia">Cardiologia</option>
+                                    <option value="dermatologia">Dermatologia</option>
+                                    <option value="pediatria">Pediatria</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataConsulta">Data:</label>
+                                <input type="date" class="form-control" id="dataConsulta" name="dataConsulta" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Consultar Agenda</button>
+                        </form>
                     </div>
-                    <!-- Seção de imagem ao lado direito -->
-                    <div class="col-md-4 d-flex align-items-center">
-                        <img src="../img/#" alt="Coleta domiciliar" class="img-fluid rounded" style="max-width: 100%; border-radius: 5px;">
+                    <!-- Marcar Exame -->
+                    <div class="tab-pane fade" id="marcacao-exames" role="tabpanel" aria-labelledby="marcacao-exames-tab">
+                        <h2>Marcar Exame</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipoExame">Tipo de Exame:</label>
+                                <select class="form-control" id="tipoExame" name="tipoExame" required>
+                                    <option value="">Selecione o tipo de exame</option>
+                                    <option value="sangue">Exame de Sangue</option>
+                                    <option value="urina">Exame de Urina</option>
+                                    <option value="imagem">Exame de Imagem</option>
+                                    <!-- Adicione mais opções conforme necessário -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataExame">Data:</label>
+                                <input type="date" class="form-control" id="dataExame" name="dataExame" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Marcar Exame</button>
+                        </form>
+                    </div>
+                    <!-- Consultar Histórico de Marcações -->
+                    <div class="tab-pane fade" id="historico-marcacoes" role="tabpanel" aria-labelledby="historico-marcacoes-tab">
+                        <h2>Consultar Histórico de Marcações</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nomeHistorico">Nome:</label>
+                                <input type="text" class="form-control" id="nomeHistorico" name="nomeHistorico" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailHistorico">E-mail:</label>
+                                <input type="email" class="form-control" id="emailHistorico" name="emailHistorico" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Consultar Histórico</button>
+                        </form>
+                    </div>
+                    <!-- Cancelar Marcação -->
+                    <div class="tab-pane fade" id="cancelar-marcacao" role="tabpanel" aria-labelledby="cancelar-marcacao-tab">
+                        <h2>Cancelar Marcação</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="idMarcacao">ID da Marcação:</label>
+                                <input type="text" class="form-control" id="idMarcacao" name="idMarcacao" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Cancelar Marcação</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- Seção de benefícios -->
-            <div class="col-md-12 mt-4">
-                <div class="bg-white p-4 rounded border">
-                    <p>Por que escolher a coleta domiciliar do Hospital Lorem Ipsum?</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Conforto:</strong> Realize seus exames em um ambiente familiar e tranquilo, ideal para quem tem dificuldade de locomoção ou prefere a privacidade do lar.</li>
-                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Segurança:</strong> Nossa equipe altamente treinada segue rigorosos protocolos de higiene e segurança, garantindo a proteção de sua saúde.</li>
-                        <li><i class="fas fa-check-circle text-primary"></i> <strong>Flexibilidade:</strong> Agendamos a coleta de acordo com sua disponibilidade, oferecendo horários que se adaptam à sua rotina.</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Seção "Como funciona" -->
-            <div class="col-md-12 mt-4">
-                <div class="bg-white p-4 rounded border">
-                    <p><strong>Como funciona?</strong></p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 rounded border">
-                                <strong>Agendamento:</strong> Entre em contato conosco para agendar a data e o horário mais conveniente para a coleta domiciliar.
-                            </div>
-                            <div class="p-3 mb-3 rounded border">
-                                <strong>Visita da Equipe:</strong> No dia marcado, um profissional qualificado irá até sua residência com todo o material necessário para a realização dos exames.
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 rounded border">
-                                <strong>Coleta dos Exames:</strong> Com todo o cuidado e profissionalismo, realizamos a coleta das amostras de maneira rápida e segura.
-                            </div>
-                            <div class="p-3 rounded border">
-                                <strong>Entrega dos Resultados:</strong> Os resultados serão enviados para você, com a mesma precisão e confiabilidade que você já conhece.
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-center mt-4">Cuide de sua saúde com mais praticidade e conforto.</p>
-                </div>
-            </div> 
         </div>
-    </main>   
+    </main>
 
     <footer class="text-center text-lg-start mt-5 text-light footer-background">
         <div class="container p-4">
@@ -256,10 +303,13 @@
             <p>&copy; 2024 Hospital Lorem Ipsum | Todos os direitos reservados.</p>
         </div>
     </footer>
-
+       
     <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.2/qrcode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
-</html>
+</html> 
